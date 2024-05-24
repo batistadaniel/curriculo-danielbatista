@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <title>Curriculo</title>
+    <style>
+        :root {
+            --main-color: #098979;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Reddit Mono", monospace;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .imagem {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .imagem img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--main-color);
+        }
+
+        .info {
+            padding: 0 150px;
+            text-align: justify;
+            display: grid;
+            gap: 26px;
+        }
+
+        h1 {
+            color: var(--main-color);
+            padding: 50px 0;
+        }
+
+        .sobre-mim,
+        .formacao,
+        .tecnologias {
+            display: grid;
+            gap: 15px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        footer img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imagem">
+        <img src="https://i.postimg.cc/kMy6ZxVz/bob-1.jpg" alt="Daniel Batista">
+    </div>
+
+    <div class="info">
+        <h1>Daniel Batista</h1>
+        <h2>Desenvolvedor Web</h2>
+
+        <div class="sobre-mim">
+            <h3>Sobre mim</h3>
+            <p>Sou um entusiasta da tecnologia, sempre buscando aprender e me aprimorar. Atualmente, estou focado no
+                desenvolvimento de sites utilizando HTML e CSS. Meu próximo passo será mergulhar no mundo do JavaScript
+                e PHP, expandindo minhas habilidades para criar sites ainda mais dinâmicos e funcionais.</p>
+        </div>
+
+        <div class="formacao">
+            <h3>Formação</h3>
+            <p>Cursando Técnico em Desenvolvimento de Sistemas - Senac DF</p>
+            <p>Cursando Programação Web - Senac DF</p>
+        </div>
+
+        <div class="tecnologias">
+            <h3>Tecnologias</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+        </div>
+    </div>
+
+    <footer>
+        <img src="https://img.icons8.com/?size=50&id=13930&format=png&color=000000" alt="Ícone 1">
+        <img src="https://img.icons8.com/?size=50&id=3tC9EQumUAuq&format=png&color=098979" alt="Ícone 2">
+    </footer>
+</body>
+
+</html>
